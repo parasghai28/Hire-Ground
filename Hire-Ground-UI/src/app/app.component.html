@@ -1,15 +1,11 @@
 <mat-toolbar color="primary">
-  <span>Hire Ground</span>
+  <button mat-button routerLink="/">Hire Ground</button>
   <span class="example-spacer"></span>
-  <button mat-button aria-label="Example icon-button with heart icon">
-    Recruiters
-  </button>
-  <button
-    mat-button
-    routerLink="/candidates"
-    aria-label="Example icon-button with share icon"
-  >
+  <button mat-button routerLink="/candidates">
     Candidates
+  </button>
+  <button mat-button routerLink="/recruiters">
+    Recruiters
   </button>
 </mat-toolbar>
 <router-outlet></router-outlet>

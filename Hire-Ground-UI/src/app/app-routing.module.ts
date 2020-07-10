@@ -1,10 +1,15 @@
 import { NgModule } from "@angular/core";
-import { Routes, RouterModule } from "@angular/router";
+import { RouterModule, Routes } from "@angular/router";
+
 import { CandidatesComponent } from "../app/modules/candidates/candidates.component";
 
 const routes: Routes = [
   {
     path: "candidates",
+    component: CandidatesComponent,
+  },
+  {
+    path: "recruiters",
     component: CandidatesComponent,
   },
 ];
