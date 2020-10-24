@@ -8,10 +8,7 @@ const routes: Routes = [
     path: "candidates",
     component: CandidatesComponent,
   },
-  {
-    path: "recruiters",
-    component: CandidatesComponent,
-  },
+  { path: 'recruiters', loadChildren: () => import('./modules/recruiters/recruiters.module').then(m => m.RecruitersModule) },
 ];
 
 @NgModule({
