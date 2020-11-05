@@ -1,14 +1,17 @@
-import { NgModule } from "@angular/core";
-import { RouterModule, Routes } from "@angular/router";
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
-import { CandidatesComponent } from "../app/modules/candidates/candidates.component";
+import { CandidatesComponent } from '../app/modules/candidates/candidates.component';
 
 const routes: Routes = [
   {
-    path: "candidates",
+    path: 'candidates',
     component: CandidatesComponent,
   },
-  { path: 'recruiters', loadChildren: () => import('./modules/recruiters/recruiters.module').then(m => m.RecruitersModule) },
+  {
+    path: 'recruiters',
+    component: CandidatesComponent,
+  },
 ];
 
 @NgModule({
