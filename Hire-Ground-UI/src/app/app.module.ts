@@ -5,7 +5,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { AngularFirestore } from '@angular/fire/firestore';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CandidatesModule } from './modules/candidates/candidates.module';
@@ -19,6 +19,7 @@ import { CandidatesModule } from './modules/candidates/candidates.module';
     MatCardModule,
     AppRoutingModule,
     CandidatesModule,
+    AngularFirestore,
     BrowserAnimationsModule,
   ],
   providers: [],
